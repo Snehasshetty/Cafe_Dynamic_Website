@@ -8,5 +8,5 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/mnt/data"  # Path on the node where the data will be stored
+    path: "/mnt/cafe/data"  # Path on the node where the data will be stored
 
