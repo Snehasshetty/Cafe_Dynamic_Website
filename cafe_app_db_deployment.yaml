@@ -16,7 +16,7 @@ spec:
         app: cafeapp 
     spec:
       containers:
-      - image: dvasanth26/mompopdb:latest
+      - image: sreedocker123/mompopcafedb:v1 
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
@@ -36,4 +36,3 @@ spec:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
           claimName: mysql-pv-claim
-
