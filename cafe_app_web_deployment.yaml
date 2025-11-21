@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cafeweb
+  name: cafeweb1
   labels:
     app: cafeapp
 spec:
@@ -29,5 +29,5 @@ spec:
           subPath: getAppParameters.php  # Specify the ConfigMap key (filename)
         ports:
         - containerPort: 80
-          name: cafeweb
+          name: cafeweb1
 
