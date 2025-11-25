@@ -123,4 +123,4 @@ echo "Apache restarted."
 # 8. Output app URL
 ############################################
 IP_ADDRESS=$(hostname -I | awk '{print $1}')
-echo "Cafe app is accessible at: http://$IP_ADDRESS/mompopcafe"
+echo "Cafe app is accessible at: http://$IP_ADDRESS"
