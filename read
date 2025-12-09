@@ -6,3 +6,15 @@ kubectl apply -f mysql_pvc.yaml
 docker
 sudo docker rm -f mompopcafeapp mysql
 sudo docker-compose up -d
+
+
+sudo docker rm -f mompopcafeapp mysql
+
+sudo docker rmi -f snehasshetty/mompopcafeapp:latest  || true
+sudo docker rmi -f snehasshetty/mysql || true
+
+sudo docker build -t snehasshetty/mompopcafeapp:latest .
+
+sudo docker run -d --name mysql -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root mysql:latest
+
+sudo docker run -d --name mompopcafeapp -p 33:80 snehasshetty/mompopcafeapp:latest
